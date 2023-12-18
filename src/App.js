@@ -1,8 +1,15 @@
+import Jumbutron from "./components/Jumbutron";
+import SearchField from "./components/SearchField";
+import Images from "./components/Images";
+
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <>
+      <Jumbutron>
+        <SearchField />
+      </Jumbutron>
+      <Images />
+    </>
   );
 }
 
