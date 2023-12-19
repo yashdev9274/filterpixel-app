@@ -1,7 +1,7 @@
 import { useState, createContext } from "react";
+import Images from "./components/Images";
 import Jumbutron from "./components/Jumbutron";
 import SearchField from "./components/SearchField";
-import Images from "./components/Images";
 import useAxios from "./hooks/useAxios";
 
 // using Context provider here

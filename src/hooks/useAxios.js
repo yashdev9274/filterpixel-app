@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const useAxios = (params) => {
+const useAxios = (param) => {
   const [response, setResponse] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -13,16 +13,16 @@ const useAxios = (params) => {
       setIsLoading(true);
       const res = await axios(url);
       setResponse(res.data.results);
-    } catch (error) {
-      setError(error);
+    } catch (err) {
+      setError(err);
     } finally {
       setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchData(params);
-  }, [params]);
+    fetchData(param);
+  }, [param]);
 
   return {
     response,
