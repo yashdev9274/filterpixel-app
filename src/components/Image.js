@@ -1,4 +1,4 @@
-const Image = (data) => {
+const Image = ({ data }) => {
   return (
     <a href={data.urls.regular} target="_blank" rel="noreferrer">
       <img
