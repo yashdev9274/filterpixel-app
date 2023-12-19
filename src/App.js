@@ -12,7 +12,7 @@ function App() {
   const [searchImage, setSearchImage] = useState("");
 
   const { response, isLoading, error, fetchData } = useAxios(
-    `search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
+    `search/photos?page=1&query=cars&client_id=${process.env.REACT_APP_UNSPLASH_KEY}`
   );
 
   const value = {
